@@ -57,22 +57,19 @@ function dropdownFunction() {
 //start of haiku function
 //lists of variables: replace all of the 5 and 7 syllable constants in the two arrays below. The more constants you write, the more variety you will have in your poem
 const fiveSyllables = [
-  "jon you are my pet",
-  "garfield was in the oven",
-  "pizza is a dream",
-  "hand over the cheese",
-  "parmesean is life",
-  "i am so hungry",
-  "where did odie go",
-  "get it your damn self",
-  "obey me human",
+  "when you don't have enough original work to draw from",
+  "a receding hare line",
+  "why are stairs are untrustworthy",
+  "two people who shouldn't be friends",
+  "dying in the snow",
 ];
 const sevenSyllables = [
-  "cheese makes everything better",
-  "the noodles must be wavey",
-  "nothing left to do but sleep",
-  "thinking about lasagne",
-  "yuk, no i don't want salad",
+  "kevin bacon in a picture frame",
+  "what do you call a bunch of rabbits walking backwards",
+  "because they're always up to something",
+  "but they're the best of friends",
+  "revenge isn't best served at all",
+  "but a shit ton of fanfiction",
 ];
 //code for haiku function (do not edit)
 const buttonHaiku = document.getElementById("button-haiku");
@@ -105,26 +102,29 @@ const textInput = document.getElementById("text-input");
 //search function constants
 //play with Google search function to come up with search terms most relevant to you. Think about how these search terms tell a story. Replace all of the placeholder text below (phrases in red font) with search terms of your own. If you keep the phrases organised alphabetically, you can ensure you have enough results for each word.
 const words = [
-  "art of war free download",
-  "ask izzy",
-  "australian family law issues in the news",
+  "alan wake wiki",
 
-  "barrister vs lawyer australia",
-  "barrister vs solicitor",
-  "bulk billed therapy",
+  "barnacle brains",
 
-  "can i seek to vary my family court order",
-  "ccs has no cctv",
-  "childcare how expensive",
+  "control wiki",
 
-  "delete search history",
-  "delusional jealousy",
-  "dv stats australia",
+  "drainage pipe asmr",
+  "digital writing what is",
+  "dame edna everage teapot",
 
-  "earliest memories as a child",
-  "emotional manipulation signs",
+  "the witcher wiki",
+  
+  "house of leaves meaning",
+  
+  "need for speed heat best cars",
+  
+  "meta search",
+  "minecraft medieval house build",
+  "minecraft medieval house build easy",
+  "minecraft easy redstone chicken farm",
 
-  "fridge magnets",
+  
+  
 ];
 //search function (do not edit)
 function changeText(e) {
@@ -156,11 +156,11 @@ textInput.addEventListener("input", changeText);
 //start of code for poem
 
 const subjects =
-    "robots, pilgrims, broken families, displaced animals, right-wing militants, cyborgs".split(
+    "demons, angels, hunters, a sister, a brother, the scientist, the director" .split(
       ","
     ),
   verbs =
-    "wander,search, cross, kneel to pray in, avoid, survey, sneak across, hide in".split(
+    "searches, destroys, wanders, shrinks, expands, drinks in, wonders".split(
       ","
     ),
   objects =
@@ -220,4 +220,4 @@ function processPoem() {
     removeFirstLine();
   }
 }
-window.setInterval(processPoem, 1000);
+window.setInterval(processPoem, 1500);
